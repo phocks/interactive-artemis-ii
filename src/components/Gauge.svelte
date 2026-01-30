@@ -4,14 +4,14 @@
   import PressureGauge from './PressureGauge.svelte';
   import { LIMIT } from '../lib/constants';
 
-  export let depthInMetres: number;
-  $: visible = depthInMetres > 85 && depthInMetres < LIMIT;
+  export let distance: number;
+  $: visible = true || distance > 85 && distance < LIMIT;
 </script>
 
 {#if visible}
-  <div class="gauge" class:bottom={depthInMetres >= LIMIT - 1} transition:fade>
-    <DepthGauge {depthInMetres} />
-    <PressureGauge pressure={depthInMetres / 10} />
+  <div class="gauge" class:bottom={distance >= LIMIT - 1} transition:fade>
+    <DepthGauge {distance} />
+    <!-- <PressureGauge pressure={distance / 10} /> -->
   </div>
 {/if}
 
@@ -20,7 +20,7 @@
     font-family: var(--dls-font-stack-sans);
     position: fixed;
     bottom: 20vh;
-    height: 2px;
+    height: 1px;
     background: rgba(255, 255, 255, 0.5);
     width: 100vw;
   }

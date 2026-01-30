@@ -7,7 +7,7 @@
 
   let ocean: HTMLDivElement;
   let scroll: ReturnType<typeof getReadableStore>;
-  let depthInMetres: number;
+  let distance: number;
 
   onMount(() => {
     const resizeObserver = new ResizeObserver((entries) => {
@@ -24,7 +24,7 @@
     });
     return () => resizeObserver.unobserve(ocean);
   });
-  $: depthInMetres =
+  $: distance =
     typeof $scroll?.data?.threshold === "number"
       ? $scroll.data.threshold * LIMIT
       : -1;
@@ -37,7 +37,7 @@
     COLUMNS}vw; --titanic-row-height: {100 / ROWS}vh;"
 >
   <slot />
-  <Gauge {depthInMetres} />
+  <Gauge {distance} />
 </div>
 
 <style lang="scss">

@@ -14,12 +14,13 @@
   $: deep = depth > 3000;
   $: position =
     align === 'top'
-      ? `top: calc(${(depth / LIMIT) * SCREENS} * 100vh - 70vh)`
+      // ? `top: calc(${(depth / LIMIT) * SCREENS} * 100vh - 70vh)`
+      ? `top: calc(${depth}px)`
       : `bottom: calc(${(1 - depth / LIMIT) * SCREENS} * 100vh)`;
 </script>
 
 <div class="block u-layout" class:deep={depth > 3000} style={position}>
-  <div class=" u-richtext">
+  <div class="u-richtext">
     {#if $depthPixels}
       {#each elements as child}
         {#if child instanceof HTMLElement}
