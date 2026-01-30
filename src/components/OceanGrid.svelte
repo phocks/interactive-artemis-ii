@@ -34,7 +34,7 @@
     COLUMNS}vw; --titanic-row-height: {100 / ROWS}vh;"
 >
   <slot />
-  <Gauge {depthInMetres} />
+  <!-- <Gauge {depthInMetres} /> -->
 </div>
 
 <style lang="scss">
@@ -43,7 +43,7 @@
     grid-template-rows: repeat(auto-fill, var(--titanic-row-height));
     grid-template-columns: repeat(var(--titanic-columns), var(--titanic-column-width));
     height: var(--titanic-height);
-    background: linear-gradient(180deg, #5996cf 0%, #070021 23%, #000 27%);
+    background: transparent;
     position: relative;
     color: #fff;
     font-size: clamp(0.9rem, 3vw, 1.1rem);
