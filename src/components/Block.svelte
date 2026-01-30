@@ -6,7 +6,7 @@
 
   export let width: number | 'max' | undefined;
   export let align: 'bottom' | 'top';
-  export let depth: number;
+  export let depth: number = 0;
   export let elements: (HTMLElement | BlockImageType)[];
 
   let position: string;
