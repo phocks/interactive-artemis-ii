@@ -7,6 +7,7 @@ import { fetchOne, getImages } from '@abcnews/terminus-fetch';
 import type { Mount } from '@abcnews/mount-utils';
 import App from './components/App.svelte';
 import Header from './components/Header.svelte';
+import { mount } from "svelte";
 
 const DECOY_KEY = 'ocean';
 const DEFAULT_IMAGE_RATIO = '3x2';
@@ -175,7 +176,7 @@ Promise.all([proxy('interactive-artemis-ii'), whenOdysseyLoaded]).then(async () 
       el.parentElement.style.zIndex = '0';
       el.parentElement.parentElement.style.marginBottom = '0';
     }
-    new Header({ target: el });
+    mount(Header, { target: el });
   });
 
   // Load the main ocean section
@@ -193,7 +194,7 @@ Promise.all([proxy('interactive-artemis-ii'), whenOdysseyLoaded]).then(async () 
     appProps = acto(getMountValue(el));
     const blocks = await parseDOM(el);
     el.textContent = null;
-    new App({ target: el, props: { ...appProps, blocks } });
+    mount(App, { target: el, props: { ...appProps, blocks } });
   });
 });
 

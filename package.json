@@ -30,6 +30,6 @@
 		"@abcnews/terminus-fetch": "^6.0.0",
 		"@abcnews/url2cmid": "^1.1.1",
 		"d3-scale": "^4.0.2",
-		"svelte": "^4.2.12"
+		"svelte": "^5.0.0"
 	}
 }
