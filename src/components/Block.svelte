@@ -40,6 +40,6 @@
   }
 
   .block > :global([class*='u-richtext'] > p) {
-    color: #fff;
+    /* color: #fff; */
   }
 </style>

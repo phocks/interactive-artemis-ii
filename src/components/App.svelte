@@ -10,5 +10,4 @@
   {/each}
 </OceanGrid>
 
-<style>
-</style>
+<style></style>

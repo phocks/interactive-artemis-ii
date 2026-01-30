@@ -4,5 +4,6 @@
 
 <style>
   .header {
+    display: flex;
   }
 </style>

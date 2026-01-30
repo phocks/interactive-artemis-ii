@@ -1,7 +1,7 @@
 {
 	"name": "interactive-artemis-ii",
 	"version": "0.0.1",
-	"description": "Artemis II interactive",
+	"description": "Artemis II Story Lab interactive",
 	"license": "MIT",
 	"private": true,
 	"contributors": [
@@ -13,7 +13,9 @@
 	"scripts": {
 		"start": "aunty serve",
 		"dev": "aunty serve",
-		"test": "aunty test"
+		"test": "aunty test",
+		"build": "aunty build",
+		"deploy": "aunty deploy"
 	},
 	"devDependencies": {
 		"@abcnews/aunty": "^15.0.3",
