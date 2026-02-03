@@ -1,7 +1,7 @@
 <script lang="ts">
+  $effect(() => {
+    console.log("effect");
+  });
 </script>
 
-<main>Hello world!</main>
-
-<style>
-</style>
+<style lang="scss"></style>
