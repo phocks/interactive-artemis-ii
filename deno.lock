@@ -9,6 +9,7 @@
     "npm:await-timeout@^1.1.1": "1.1.1",
     "npm:sass-embedded@^1.97.3": "1.97.3",
     "npm:svelte-check@^4.3.4": "4.3.5_svelte@5.48.0__acorn@8.15.0_typescript@5.9.3",
+    "npm:svelte-portal@^2.2.1": "2.2.1",
     "npm:svelte@^5.43.8": "5.48.0_acorn@8.15.0",
     "npm:typescript@~5.9.3": "5.9.3",
     "npm:vite@^7.2.4": "7.3.1_@types+node@24.10.9_sass-embedded@1.97.3_picomatch@4.0.3"
@@ -792,6 +793,9 @@
       ],
       "bin": true
     },
+    "svelte-portal@2.2.1": {
+      "integrity": "sha512-uF7is5sM4aq5iN7QF/67XLnTUvQCf2iiG/B1BHTqLwYVY1dsVmTeXZ/LeEyU6dLjApOQdbEG9lkqHzxiQtOLEQ=="
+    },
     "svelte@5.48.0_acorn@8.15.0": {
       "integrity": "sha512-+NUe82VoFP1RQViZI/esojx70eazGF4u0O/9ucqZ4rPcOZD+n5EVp17uYsqwdzjUjZyTpGKunHbDziW6AIAVkQ==",
       "dependencies": [
@@ -886,6 +890,7 @@
         "npm:await-timeout@^1.1.1",
         "npm:sass-embedded@^1.97.3",
         "npm:svelte-check@^4.3.4",
+        "npm:svelte-portal@^2.2.1",
         "npm:svelte@^5.43.8",
         "npm:typescript@~5.9.3",
         "npm:vite@^7.2.4"

@@ -1,9 +1,11 @@
 <script lang="ts">
-  $effect(() => {
-    console.log("effect");
-  });
+  import Portal from "svelte-portal";
+  import Header from "./components/Header.svelte";
 </script>
 
-<div>Hello World!!!</div>
+<Portal target=".Header">
+  <Header></Header>
+</Portal>
 
-<style lang="scss"></style>
+<style lang="scss">
+</style>
