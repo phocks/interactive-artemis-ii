@@ -18,7 +18,8 @@
     "allowJs": true,
     "checkJs": true,
     "moduleDetection": "force",
-    "composite": true
+    "composite": true,
+    "emitDeclarationOnly": true
   },
   "include": [
     "src/**/*.ts",
