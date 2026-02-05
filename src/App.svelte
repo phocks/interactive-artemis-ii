@@ -1,10 +1,11 @@
 <script lang="ts">
   import Portal from "svelte-portal";
   import Header from "./components/Header.svelte";
+  import Stage from "./components/Stage.svelte";
   import {
     loadDarkModeObserver,
     unloadDarkModeObserver,
-    setMode
+    setMode,
   } from "./lib/darkModeSwitcher";
 
   $effect(() => {
@@ -18,5 +19,8 @@
   <Header></Header>
 </Portal>
 
-<style lang="scss">
-</style>
+<Portal target="[data-key='body']">
+  <Stage></Stage>
+</Portal>
+
+<style lang="scss"></style>

@@ -2,9 +2,16 @@
 
 <style lang="scss">
   :global {
+    .Header {
+      height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     .Header-content h1 {
       font-size: 6rem !important;
-      color: salmon;
+      color: var(--interactive-color-header);
       text-align: center;
     }
   }
