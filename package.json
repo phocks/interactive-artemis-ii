@@ -18,12 +18,12 @@
     "svelte": "^5.43.8",
     "svelte-check": "^4.3.4",
     "typescript": "~5.9.3",
-    "vite": "^7.2.4"
+    "vite": "^7.2.4",
+    "vite-plugin-script-loader": "^0.0.4"
   },
   "dependencies": {
     "@abcnews/env-utils": "^6.0.0",
     "await-timeout": "^1.1.1",
-    "svelte-portal": "^2.2.1",
-    "vite-plugin-script-loader": "^0.0.4"
+    "svelte-portal": "^2.2.1"
   }
 }
