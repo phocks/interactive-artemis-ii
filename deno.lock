@@ -11,6 +11,7 @@
     "npm:svelte-check@^4.3.4": "4.3.5_svelte@5.48.0__acorn@8.15.0_typescript@5.9.3",
     "npm:svelte-portal@^2.2.1": "2.2.1",
     "npm:svelte@^5.43.8": "5.48.0_acorn@8.15.0",
+    "npm:three@0.182": "0.182.0",
     "npm:typescript@~5.9.3": "5.9.3",
     "npm:vite-plugin-script-loader@^0.0.4": "0.0.4_rollup@4.56.0_vite@7.3.1__@types+node@24.10.9__sass-embedded@1.97.3__picomatch@4.0.3_@types+node@24.10.9_sass-embedded@1.97.3",
     "npm:vite@^7.2.4": "7.3.1_@types+node@24.10.9_sass-embedded@1.97.3_picomatch@4.0.3"
@@ -829,6 +830,9 @@
     "sync-message-port@1.2.0": {
       "integrity": "sha512-gAQ9qrUN/UCypHtGFbbe7Rc/f9bzO88IwrG8TDo/aMKAApKyD6E3W4Cm0EfhfBb6Z6SKt59tTCTfD+n1xmAvMg=="
     },
+    "three@0.182.0": {
+      "integrity": "sha512-GbHabT+Irv+ihI1/f5kIIsZ+Ef9Sl5A1Y7imvS5RQjWgtTPfPnZ43JmlYI7NtCRDK9zir20lQpfg8/9Yd02OvQ=="
+    },
     "tinyglobby@0.2.15_picomatch@4.0.3": {
       "integrity": "sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==",
       "dependencies": [
@@ -904,6 +908,7 @@
         "npm:svelte-check@^4.3.4",
         "npm:svelte-portal@^2.2.1",
         "npm:svelte@^5.43.8",
+        "npm:three@0.182",
         "npm:typescript@~5.9.3",
         "npm:vite-plugin-script-loader@^0.0.4",
         "npm:vite@^7.2.4"

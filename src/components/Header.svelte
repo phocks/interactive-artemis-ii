@@ -1,4 +1,11 @@
 <script lang="ts">
+  import { untrack } from "svelte";
+
+  $effect(() => {
+    untrack(() => {
+      console.log("onMount");
+    });
+  });
 </script>
 
 <style lang="scss">
@@ -10,8 +17,12 @@
       justify-content: center;
       align-items: center;
 
+      .Header-content {
+        margin-inline: 16px;
+      }
+
       .Header-content h1 {
-        font-size: 6rem !important;
+        font-size: 3.2rem !important;
         color: var(--interactive-color-header);
         text-align: center;
       }

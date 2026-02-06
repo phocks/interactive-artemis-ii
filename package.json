@@ -24,6 +24,7 @@
   "dependencies": {
     "@abcnews/env-utils": "^6.0.0",
     "await-timeout": "^1.1.1",
-    "svelte-portal": "^2.2.1"
+    "svelte-portal": "^2.2.1",
+    "three": "^0.182.0"
   }
 }
