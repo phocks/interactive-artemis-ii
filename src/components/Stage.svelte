@@ -1,9 +1,11 @@
 <script lang="ts">
   import Rocket from "./Rocket.svelte";
+  import Rocket3D from "./Rocket3D.svelte";
 </script>
 
 <div class="stage-root">
-  <Rocket />
+  <!-- <Rocket /> -->
+  <Rocket3D />
 </div>
 
 <style lang="scss">

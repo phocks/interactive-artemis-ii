@@ -2,6 +2,7 @@
   import Portal from "svelte-portal";
   import Header from "./components/Header.svelte";
   import Stage from "./components/Stage.svelte";
+  import Timeline from "./components/Timeline.svelte";
   import {
     loadDarkModeObserver,
     unloadDarkModeObserver,
@@ -22,5 +23,10 @@
 <Portal target="[data-key='body']">
   <Stage></Stage>
 </Portal>
+
+<Portal target="#timelinemount">
+  <Timeline></Timeline>
+</Portal>
+
 
 <style lang="scss"></style>
